@@ -1,31 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  Search,
-  Plane,
-  Car,
-  Train,
-  Ship,
-  ArrowRight,
-  ShieldCheck,
-  Globe2,
-  Weight,
-  Calendar,
-  MapPin,
-  ChevronRight,
-} from "lucide-react";
-
-/**
- * Transkage — Landing Page + Smart Search Bar (React + Tailwind v3)
- *
- * Dépendances à installer dans ton projet :
- *   npm i lucide-react framer-motion
- *
- * Utilisation :
- *   import LandingPage from "./LandingPage" (ou place ce composant dans src/pages/Landing.jsx)
- *   export default function App() { return <LandingPage /> }
- */
+import { Search, Plane, Car, Train, Ship, ArrowRight, ShieldCheck, Globe2, Weight, Calendar, MapPin, ChevronRight } from "lucide-react";
 
 const MODES = [
   { key: "all", label: "Tous", icon: Search }, // <- icon (minuscule)
