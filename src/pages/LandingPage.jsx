@@ -3,6 +3,10 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Search, Plane, Car, Train, Ship, ArrowRight, ShieldCheck, Globe2, Weight, Calendar, MapPin, ChevronRight } from "lucide-react";
 
+// ✅ composants Motion explicites (le linter voit bien l'usage)
+const MotionForm = motion.form;
+// const MotionDiv  = motion.div;
+
 const MODES = [
   { key: "all", label: "Tous", icon: Search }, // <- icon (minuscule)
   { key: "car", label: "Voiture", icon: Car },
@@ -51,7 +55,7 @@ function SearchBar() {
   };
 
   return (
-    <motion.form
+    <MotionForm
       onSubmit={onSubmit}
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
@@ -133,7 +137,7 @@ function SearchBar() {
           <Search className="h-4 w-4" /> Rechercher
         </button>
       </div>
-    </motion.form>
+    </MotionForm>
   );
 }
 
