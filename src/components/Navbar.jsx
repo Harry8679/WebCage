@@ -47,11 +47,11 @@ export default function Navbar({ user = null, onLogout, variant = "glass" }) {
         <div className="hidden md:flex items-center gap-2">
           {!user ? (
             <>
-              <Link to="/login" className="text-sm px-3 py-1.5 rounded-lg hover:bg-black/5">
+              <Link to="/connexion" className="text-sm px-3 py-1.5 rounded-lg hover:bg-black/5">
                 Connexion
               </Link>
               <Link
-                to="/register"
+                to="/inscription"
                 className="text-sm px-3 py-1.5 rounded-lg bg-black text-white hover:bg-gray-900"
               >
                 Créer un compte
@@ -101,11 +101,11 @@ export default function Navbar({ user = null, onLogout, variant = "glass" }) {
 
             {!user ? (
               <div className="pt-2 flex gap-2">
-                <Link to="/login" className="flex-1 text-center px-3 py-2 rounded-lg border" onClick={() => setOpen(false)}>
+                <Link to="/connexion" className="flex-1 text-center px-3 py-2 rounded-lg border" onClick={() => setOpen(false)}>
                   Connexion
                 </Link>
                 <Link
-                  to="/register"
+                  to="/inscription"
                   className="flex-1 text-center px-3 py-2 rounded-lg bg-black text-white"
                   onClick={() => setOpen(false)}
                 >
